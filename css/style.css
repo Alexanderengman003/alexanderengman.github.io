@@ -2650,7 +2650,9 @@ h6 {
 
 .main_btn2 {
   display: inline-block;
-  background: #8490ff;
+  background: #8490ff;.wel_item {
+    margin-bottom: 20px;
+}
   padding: 0px 32px;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -2890,7 +2892,9 @@ h6 {
     font-family: "Roboto", sans-serif;
     color: #777777;
     margin-bottom: 0px; }
-
+    .wel_item {
+      margin-bottom: 20px;
+  }
 .tools_expert {
   box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
   padding: 50px 35px; }
@@ -3034,6 +3038,7 @@ h6 {
 .projects_text a:hover {
   color: #333333;
 }
+
 
 .projects_fillter .filter {
   text-align: center;
