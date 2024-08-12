@@ -3006,21 +3006,33 @@ h6 {
 
 .projects_item .company-logo {
   max-width: 100%;
-  max-height: 230px; /* Adjust this value as needed */
+  max-height: 200px; /* Adjust this value as needed */
   object-fit: contain;
 }
 
 .projects_text {
   margin-top: auto;
-  text-align: center;
+  text-align: left; /* Change this from 'center' to 'left' */
+  padding-top: 15px;
 }
 
 .projects_text h4 {
   margin-bottom: 5px;
+  color: #666666;
 }
 
 .projects_text p {
   margin-bottom: 0;
+  color: #999999;
+}
+
+.projects_text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects_text a:hover {
+  color: #333333;
 }
 
 .projects_fillter .filter {
