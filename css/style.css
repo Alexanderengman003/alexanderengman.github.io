@@ -255,6 +255,40 @@ button:focus {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+.language-flag {
+  margin-right: 10px; /* Adjust this value to increase or decrease the space */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.preferred_tasks, .tools_expert {
+  margin-bottom: 30px;
+}
+
+.pie_chart {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.pie_legend {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 991px) {
+  .preferred_tasks, .tools_expert {
+      margin-bottom: 30px;
+  }
+}
+
+.color_box {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
 .header_area {
   position: absolute;
   width: 100%;
@@ -2950,6 +2984,45 @@ h6 {
 /*----------------------------------------------------*/
 /* Projects Area css
 ============================================================================================ */
+
+.projects_item {
+  background-color: white;
+  padding: 1cm;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 350px; /* Adjust this value as needed */
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px; /* Increased from 20px */
+}
+
+.projects_item .company-logo {
+  max-width: 100%;
+  max-height: 230px; /* Adjust this value as needed */
+  object-fit: contain;
+}
+
+.projects_text {
+  margin-top: auto;
+  text-align: center;
+}
+
+.projects_text h4 {
+  margin-bottom: 5px;
+}
+
+.projects_text p {
+  margin-bottom: 0;
+}
+
 .projects_fillter .filter {
   text-align: center;
   margin-top: 70px;
@@ -3073,6 +3146,7 @@ h6 {
 .testi_inner .col-lg-3 {
   vertical-align: middle;
   align-self: center; }
+
 
 .test_title h2 {
   color: #222222;
