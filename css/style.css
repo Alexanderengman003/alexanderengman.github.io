@@ -484,6 +484,12 @@ button:focus {
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
 
+        .button-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding: 10px 20px 30px; /* top right bottom left */
+      }
 .blog_banner {
   min-height: 780px;
   position: relative;
