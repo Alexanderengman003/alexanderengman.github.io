@@ -180,10 +180,10 @@ button:focus {
 }
 
 .slider-label {
-  font-size: 16px; /* Adjusted to match the skill item font size */
-  color: #5f5f5f; /* Adjusted to match the skill item color */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* Adjusted to match the skill item font size */
+  color: #737373; /* Adjusted to match the skill item color */
   font-weight: normal; /* Adjusted to match the skill item font weight */
-  font-family: "Heebo", sans-serif; /* Ensure it matches the font family of your skill items */
 }
 
 .trait-percentage {
@@ -224,7 +224,8 @@ button:focus {
   }
 
   .slider-label {
-      font-size: 14px; /* Slightly smaller for mobile, adjust as needed */
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; /* Adjusted to match the skill item font size */
   }
 
   .slider-handle {
@@ -349,10 +350,25 @@ button:focus {
   padding: 0;
 }
 
-.about-me-text {
-  max-width: 600px; /* Adjust this value as needed */
+.about-myself-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
+}
+
+.about-myself-header {
+  flex: 0 0 200px;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #222222;
+}
+
+.about-me-text {
+  flex: 1;
+  min-width: 300px;
 }
 
 .about-me-text p {
@@ -360,25 +376,41 @@ button:focus {
   line-height: 1.6;
   color: #777777;
   text-align: justify;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  .about-me-text p {
-      font-size: 14px;
-      line-height: 1.5;
-      text-align: left;
+@media (max-width: 991px) {
+  .about-myself-container {
+      max-width: 700px;
   }
-}
-@media (min-width: 768px) {
-  .equal-lines span {
-      display: block;
-      margin-bottom: 5px;
+  .about-myself-header {
+      flex: 0 0 150px;
+      margin-right: 20px;
+      font-size: 18px;
+  }
+  .about-me-text p {
+      font-size: 15px;
+      line-height: 1.5;
   }
 }
 
 @media (max-width: 767px) {
-  .equal-lines span {
-      white-space: normal;
+  .about-myself-container {
+      flex-direction: column;
+  }
+  .about-myself-header {
+      flex: 0 0 auto;
+      margin-right: 0;
+      margin-bottom: 15px;
+      font-size: 18px;
+  }
+  .about-me-text {
+      min-width: 100%;
+  }
+  .about-me-text p {
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: left;
   }
 }
 
