@@ -162,21 +162,41 @@ button:focus {
 
 .personality-trait h4 {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .slider-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 37px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.slider-label {
+  font-size: 14px;
+  color: #777777;
+  font-weight: bold;
+  width: 100px; /* Fixed width for labels */
+  flex-shrink: 0; /* Prevent labels from shrinking */
+}
+
+.slider-label.left {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.slider-label.right {
+  text-align: left;
+  padding-left: 10px;
 }
 
 .slider {
-  flex-grow: 1;
+  width: 320px; /* Fixed width for the slider */
   height: 4px;
   background-color: #e0e0e0;
   position: relative;
   margin: 0 15px;
+  flex-shrink: 0; /* Prevent slider from shrinking */
 }
 
 .slider-fill {
@@ -198,18 +218,14 @@ button:focus {
   animation: moveHandle 2s ease-out forwards;
 }
 
-.slider-label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #777777;
-}
-
 .slider-value {
   text-align: center;
   margin-top: 10px;
   font-weight: bold;
   color: #333333;
 }
+
+/* Rest of your CSS (individual slider controls and keyframe animations) remains the same */
 
 /* Individual slider controls */
 .slider1 .slider-fill { animation-name: fillSlider1; }
@@ -230,11 +246,11 @@ button:focus {
 /* Keyframe animations for each slider */
 @keyframes fillSlider1 {
   from { width: 100%; }
-  to { width: 80%; }
+  to { width: 40%; }
 }
 @keyframes moveHandle1 {
   from { right: 100%; }
-  to { right: 80%; }
+  to { right: 40%; }
 }
 
 @keyframes fillSlider2 {
@@ -248,29 +264,29 @@ button:focus {
 
 @keyframes fillSlider3 {
   from { width: 100%; }
-  to { width: 70%; }
+  to { width: 50%; }
 }
 @keyframes moveHandle3 {
   from { right: 100%; }
-  to { right: 70%; }
+  to { right: 50%; }
 }
 
 @keyframes fillSlider4 {
   from { width: 100%; }
-  to { width: 90%; }
+  to { width: 80%; }
 }
 @keyframes moveHandle4 {
   from { right: 100%; }
-  to { right: 90%; }
+  to { right: 80%; }
 }
 
 @keyframes fillSlider5 {
   from { width: 100%; }
-  to { width: 75%; }
+  to { width: 70%; }
 }
 @keyframes moveHandle5 {
   from { right: 100%; }
-  to { right: 75%; }
+  to { right: 70%; }
 }
 
 .equal-lines {
