@@ -289,6 +289,31 @@ button:focus {
   to { right: 70%; }
 }
 
+@keyframes progressAnimation {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes progressAnimation {
+  0% { width: 0%; }
+  100% { width: var(--percent); }
+}
+
+.progress-bar {
+  animation: progressAnimation 2s ease-out forwards;
+}
+
+.progress-bar[data-percent="100"] { --percent: 100%; }
+.progress-bar[data-percent="90"] { --percent: 90%; }
+.progress-bar[data-percent="80"] { --percent: 80%; }
+.progress-bar[data-percent="75"] { --percent: 75%; }
+.progress-bar[data-percent="70"] { --percent: 70%; }
+.progress-bar[data-percent="60"] { --percent: 60%; }
+.progress-bar[data-percent="50"] { --percent: 50%; }
+.progress-bar[data-percent="25"] { --percent: 25%; }
+.progress-bar[data-percent="20"] { --percent: 20%; }
+.progress-bar[data-percent="10"] { --percent: 10%; }
+
 .equal-lines {
   text-align: left;
   max-width: 500px; /* Adjust this value as needed */
