@@ -156,6 +156,122 @@ button:focus {
 .highlight:nth-child(4) { animation: fadeInUp 1s ease-out 3s both; }
 .highlight:nth-child(5) { animation: fadeInUp 1s ease-out 4s both; }
 
+.personality-trait {
+  margin-bottom: 30px;
+}
+
+.personality-trait h4 {
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 37px;
+}
+
+.slider {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #e0e0e0;
+  position: relative;
+  margin: 0 15px;
+}
+
+.slider-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #6dafff;
+  right: 0;
+  animation: fillSlider 2s ease-out forwards;
+}
+
+.slider-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3971ff;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  animation: moveHandle 2s ease-out forwards;
+}
+
+.slider-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777777;
+}
+
+.slider-value {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Individual slider controls */
+.slider1 .slider-fill { animation-name: fillSlider1; }
+.slider1 .slider-handle { animation-name: moveHandle1; }
+
+.slider2 .slider-fill { animation-name: fillSlider2; }
+.slider2 .slider-handle { animation-name: moveHandle2; }
+
+.slider3 .slider-fill { animation-name: fillSlider3; }
+.slider3 .slider-handle { animation-name: moveHandle3; }
+
+.slider4 .slider-fill { animation-name: fillSlider4; }
+.slider4 .slider-handle { animation-name: moveHandle4; }
+
+.slider5 .slider-fill { animation-name: fillSlider5; }
+.slider5 .slider-handle { animation-name: moveHandle5; }
+
+/* Keyframe animations for each slider */
+@keyframes fillSlider1 {
+  from { width: 100%; }
+  to { width: 80%; }
+}
+@keyframes moveHandle1 {
+  from { right: 100%; }
+  to { right: 80%; }
+}
+
+@keyframes fillSlider2 {
+  from { width: 100%; }
+  to { width: 60%; }
+}
+@keyframes moveHandle2 {
+  from { right: 100%; }
+  to { right: 60%; }
+}
+
+@keyframes fillSlider3 {
+  from { width: 100%; }
+  to { width: 70%; }
+}
+@keyframes moveHandle3 {
+  from { right: 100%; }
+  to { right: 70%; }
+}
+
+@keyframes fillSlider4 {
+  from { width: 100%; }
+  to { width: 90%; }
+}
+@keyframes moveHandle4 {
+  from { right: 100%; }
+  to { right: 90%; }
+}
+
+@keyframes fillSlider5 {
+  from { width: 100%; }
+  to { width: 75%; }
+}
+@keyframes moveHandle5 {
+  from { right: 100%; }
+  to { right: 75%; }
+}
 
 .equal-lines {
   text-align: left;
