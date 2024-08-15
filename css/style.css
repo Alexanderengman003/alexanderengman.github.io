@@ -162,7 +162,6 @@ button:focus {
 
 .personality-trait h4 {
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .slider-container {
@@ -220,37 +219,38 @@ button:focus {
   animation: moveHandle 2s ease-out forwards;
 }
 
-.slider-value {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333333;
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .slider-container {
-    flex-direction: column;
-    align-items: stretch;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Distribute space evenly */
   }
 
   .slider-label {
-    width: 100%;
+    width: auto; /* Allow labels to shrink */
     max-width: none;
-    text-align: center;
-    padding: 5px 0;
+    font-size: 12px; /* Slightly smaller font for mobile */
   }
 
-  .slider-label.left, .slider-label.right {
-    text-align: center;
+  .slider-label.left {
+    padding-right: 5px;
+  }
+
+  .slider-label.right {
+    padding-left: 5px;
   }
 
   .slider {
-    width: 100%;
-    max-width: none;
-    margin: 10px 0;
+    width: 40%; /* Slightly narrower slider on mobile */
+    margin: 0 10px;
   }
 }
+
+/* Keyframe animations for each slider (unchanged) */
+/* ... */
+
+/* Individual slider animations (unchanged) */
+/* ... */
 
 /* Rest of your CSS (individual slider controls and keyframe animations) remains the same */
 
@@ -339,6 +339,7 @@ button:focus {
 .progress-bar[data-percent="70"] { --percent: 70%; }
 .progress-bar[data-percent="60"] { --percent: 60%; }
 .progress-bar[data-percent="50"] { --percent: 50%; }
+.progress-bar[data-percent="40"] { --percent: 40%; }
 .progress-bar[data-percent="25"] { --percent: 25%; }
 .progress-bar[data-percent="20"] { --percent: 20%; }
 .progress-bar[data-percent="10"] { --percent: 10%; }
