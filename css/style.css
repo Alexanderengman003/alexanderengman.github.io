@@ -166,38 +166,28 @@ button:focus {
 
 .slider-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .slider-label {
   font-size: 14px;
   color: #777777;
   font-weight: bold;
-  width: 25%; /* Use percentage instead of fixed width */
-  max-width: 100px; /* Maximum width for larger screens */
-  flex-shrink: 0;
-}
-
-.slider-label.left {
-  text-align: right;
-  padding-right: 10px;
-}
-
-.slider-label.right {
-  text-align: left;
-  padding-left: 10px;
 }
 
 .slider {
-  width: 50%; /* Use percentage instead of fixed width */
-  max-width: 200px; /* Maximum width for larger screens */
+  width: 100%;
   height: 4px;
   background-color: #e0e0e0;
   position: relative;
-  margin: 0 15px;
-  flex-shrink: 0;
 }
 
 .slider-fill {
@@ -221,28 +211,8 @@ button:focus {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  .slider-container {
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Distribute space evenly */
-  }
-
   .slider-label {
-    width: auto; /* Allow labels to shrink */
-    max-width: none;
     font-size: 12px; /* Slightly smaller font for mobile */
-  }
-
-  .slider-label.left {
-    padding-right: 5px;
-  }
-
-  .slider-label.right {
-    padding-left: 5px;
-  }
-
-  .slider {
-    width: 40%; /* Slightly narrower slider on mobile */
-    margin: 0 10px;
   }
 }
 
