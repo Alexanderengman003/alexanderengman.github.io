@@ -41,14 +41,14 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+								<!-- <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.html">Services</a> -->
 								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
 										<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-										<li class="nav-item"><a class="nav-link" href="work.html">Experience</a></li>
+										<li class="nav-item"><a class="nav-link" href="work.html">Professional</a></li>
 									</ul>
 								</li> 
 								<li class="nav-item submenu dropdown">
@@ -239,6 +239,7 @@
 								</div>
 							</div>
 						</div>
+						
 						<!-- New Language Skills Section -->
 						<div class="tools_expert mt-5">
 							<h3>Language Skills</h3>
@@ -281,6 +282,43 @@
 								</div>
 							</div>
 						</div>
+<!-- Your existing "Did you know" box HTML -->
+<div class="did-you-know-box">
+    <h4>Did you know?</h4>
+    <p id="fun-fact"></p>
+</div>
+
+<!-- Add this script tag at the end of your body, or in your separate JS file -->
+<script>
+    // Array of fun facts
+    const funFacts = [
+        "I hold a 1 DAN black belt in Judo",
+        "My first job was building computers in a warehouse",
+        "I've contributed to open-source projects in 5 different programming languages.",
+        "I can type at a speed of 120 words per minute.",
+        "I've attended tech conferences in 10 different countries.",
+        "I built my first website when I was just 12 years old.",
+        "I'm fluent in 4 programming languages and 3 human languages.",
+        "I've mentored over 50 junior developers throughout my career.",
+        "My GitHub repositories have over 1000 stars combined.",
+        "I once debugged a production issue while on a roller coaster!"
+    ];
+
+    // Function to get a random fun fact
+    function getRandomFunFact() {
+        const randomIndex = Math.floor(Math.random() * funFacts.length);
+        return funFacts[randomIndex];
+    }
+
+    // Function to set the fun fact in the "Did you know" box
+    function setFunFact() {
+        const funFactElement = document.getElementById('fun-fact');
+        funFactElement.textContent = getRandomFunFact();
+    }
+
+    // Call setFunFact when the page loads
+    window.onload = setFunFact;
+</script>
 					</div>
         		</div>
         	</div>
@@ -291,8 +329,9 @@
 		<section class="feature_area p_120">
 			<div class="container">
 				<div class="main_title">
-					<h2>Areas of experience</h2>
-					<p>The following areas are things that I have either studied or have previous work experience.</p>
+					<h2>Areas of expertise</h2>
+					<p>My professional journey has encompassed a diverse range of fields, blending academic knowledge with hands-on 
+					industry experience. The following areas represent the core competencies I've developed through my career.</p>
 				</div>
 				<div class="feature_inner row">
 					<div class="col-lg-4 col-md-6">
@@ -347,7 +386,8 @@
         	<div class="container">
         		<div class="main_title">
 					<h2>Previous experience</h2>
-					<p>These are some of the jobs that I had.</p>
+					Throughout my career, I've had the privilege of working in diverse roles across various industries, each contributing to my
+					 professional growth and expertise. Below you will find more information about these.
 				</div>
         		<div class="projects_fillter">
 					<ul class="filter list">
@@ -433,7 +473,9 @@
         	<div class="container">
         		<div class="main_title">
 					<h2>Completed Projects</h2>
-					<p>These are some of my proudest accomplishments and projects in which I have been involved, ranging from university projects to examples from industries.</p>
+					<p>Throughout my academic and professional journey, I've had the opportunity to work on diverse 
+						and challenging projects. Below are some of my proudest accomplishments, showcasing a range 
+						of skills.</p>
 				</div>
         		<div class="projects_fillter">
 					<ul class="filter list">
@@ -494,7 +536,9 @@
 			<div class="container">
 				<div class="main_title">
 					<h2>Previous education or training</h2>
-					<p>Here is what I have studied so far</p>
+                    <p>My academic journey has equipped me with a strong foundation in engineering 
+                        and technology. From bachelor's to master's level, I've delved into cutting-edge fields 
+                        like nanotechnology and materials science.</p>
 				</div>
 				<div class="row latest_blog_inner">
 					<div class="col-lg-4">
@@ -536,9 +580,27 @@
 									polymer materials) as well as industrial management and application of novel materials. 
 									The studies were concluded with a Bachelor's thesis titled: "Mechanical Properties of Bulk alloys and Cemented Carbides".
 	
-									<p><a href="https://www.diva-portal.org/smash/record.jsf?dswid=5749&pid=diva2%3A1220041&c=4&searchType=SIMPLE&language=sv&query=alexander+engman&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">Read bachelor's thesis here</a></p>
+									<p><a href="https://www.diva-portal.org/smash/get/diva2:1220041/FULLTEXT01.pdf">Read bachelor's thesis here</a></p>
 									<p><a href="/docs/1990010849392YCII.pdf">View transcripts here</a></p>
 							</div>
+						</div>        
+					</div>
+					<div class="col-lg-4">
+						<div class="l_blog_item">
+							<div class="l_blog_img">
+								<img class="img-fluid" src="img/companies/PADI.png" alt="">
+							</div>
+							<div class="l_blog_text">
+								<div class="date">
+									<a href="#">April 2010 |  Rainbow Divers<br>
+										Nha Trang, Vietnam</a>
+								</div>
+								<a href="#"><h4>PADI Open Water Scuba Instructor</h4></a>
+								<p>During my younger years, SCUBA was my passion. I sought to turn my hobby into a profession,
+									so I took the PADI Open Water Scuba Instructor course. During the course, I learned how to 
+									teach others how to scuba dive, which includes a lot of responsibility for the safety of the students.
+									This included EFR traing. During 2 years, I lived and worked in South East Asia (Vietnam, Thailand, Malaysia),
+									and taught scuba diving to tourists.
 						</div>        
 					</div>
 				</div>

@@ -442,7 +442,29 @@ button:focus {
     font-weight: 500;
     font-size: 12px; }
 
-/*---------------------------------------------------- */
+
+    .did-you-know-box {
+      background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+      border-left: 5px solid #6daaff;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .did-you-know-box h4 {
+      color: #7b7b7b;
+      margin-top: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+  }
+  
+  .did-you-know-box p {
+      margin-bottom: 0;
+      color: #828282;
+      font-size: 14px;
+      line-height: 1.5;
+  }
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
