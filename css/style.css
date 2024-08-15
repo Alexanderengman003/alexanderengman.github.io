@@ -168,16 +168,17 @@ button:focus {
 .slider-container {
   display: flex;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .slider-label {
   font-size: 14px;
   color: #777777;
   font-weight: bold;
-  width: 100px; /* Fixed width for labels */
-  flex-shrink: 0; /* Prevent labels from shrinking */
+  width: 25%; /* Use percentage instead of fixed width */
+  max-width: 100px; /* Maximum width for larger screens */
+  flex-shrink: 0;
 }
 
 .slider-label.left {
@@ -191,12 +192,13 @@ button:focus {
 }
 
 .slider {
-  width: 320px; /* Fixed width for the slider */
+  width: 50%; /* Use percentage instead of fixed width */
+  max-width: 200px; /* Maximum width for larger screens */
   height: 4px;
   background-color: #e0e0e0;
   position: relative;
   margin: 0 15px;
-  flex-shrink: 0; /* Prevent slider from shrinking */
+  flex-shrink: 0;
 }
 
 .slider-fill {
@@ -224,6 +226,33 @@ button:focus {
   font-weight: bold;
   color: #333333;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .slider-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .slider-label {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .slider-label.left, .slider-label.right {
+    text-align: center;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: none;
+    margin: 10px 0;
+  }
+}
+
+/* Rest of your CSS (individual slider controls and keyframe animations) remains the same */
 
 /* Rest of your CSS (individual slider controls and keyframe animations) remains the same */
 
