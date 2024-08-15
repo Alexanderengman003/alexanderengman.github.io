@@ -1060,6 +1060,38 @@ button:focus {
   .blog_details p {
     margin-bottom: 26px; }
 
+    @media (min-width: 992px) {
+      .blog_details {
+          padding-left: 15px;
+      }
+      
+      .blog_info {
+          text-align: right;
+      }
+  
+      .blog_info .blog_meta li {
+          margin-bottom: 10px;
+      }
+  }
+  
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.blog_details {
+    padding-left: 20px;
+}
+
+.blog_info .blog_meta li {
+    margin-bottom: 15px;
+}
+
+.blog_right_sidebar {
+    padding-left: 20px;
+}
 .view_btn {
   font-size: 14px;
   line-height: 36px;
