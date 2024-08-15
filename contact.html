@@ -68,7 +68,7 @@
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="banner_content text-center">
-						<h2>CONTACT US</h2>
+						<h2>CONTACT</h2>
 						<div class="page_link">
 							<a href="index.html">Home</a>
 							<a href="contact.html">CONTACT</a>
@@ -137,6 +137,31 @@
                 </div>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: 'contact_process.php',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        alert(response.message);
+                        $('#contactForm')[0].reset();
+                    } else {
+                        alert('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert('An error occurred: ' + error);
+                }
+            });
+        });
+    });
+    </script>
         <!--================Contact Area =================-->
         
         <!--================Footer Area =================-->
