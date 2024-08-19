@@ -121,10 +121,16 @@
                                             <script>
                                                 // Array of fun facts
                                                 const funFacts = [
-                                                    "I made most of the graphics for the thesis myself.",
-                                                    "Stretchable electronics can revolutionize the field of wearable technology.",
-                                                    "Flexible electronics has been studied extensively, but stretchable electronics is the next big leap!",
-                                                    "3D printing of conductive fluids can be used to create stretchable electronics.",
+"MEMS devices can be smaller than the width of a human hair!",
+        "The comb drive actuator in our project uses electrostatic forces to move, just like when you rub a balloon on your hair.",
+        "MEMS technology is used in your smartphone's accelerometer, helping it know which way is up.",
+        "The fabrication process for our MEMS switch involved etching trenches deeper than they are wide, like digging a very narrow well.",
+        "MEMS devices often use silicon, the same material used in computer chips.",
+        "Critical Point Drying, which we used in fabrication, is also used to preserve biological specimens for microscopy.",
+        "MEMS technology enables tiny mirrors in digital projectors to create images by moving thousands of times per second.",
+        "The optical switch we designed could potentially be used in fiber-optic communication systems.",
+        "MEMS devices can include both electrical and mechanical components on a single chip.",
+        "The first MEMS device was created in the 1960s, but the field has exploded in the last few decades with advancements in microfabrication.",
                                                 ];
 
                                                 // Function to get a random fun fact
@@ -165,45 +171,123 @@
                                     <h2>Mechanical multi-stable optical in-plane switch design</h2>
                                     <p class="excert">
                                         <strong>Project description</strong><br>
-                                        
-                                        
+                                        For the course EK2360 Hands-on MEMS Engineering, students were tasked with 
+                                        designing, fabricating, and evaluating a system for an optical switch. The requirements were that 
+                                        the system should be fabricated in silicon, be movable in two directions, and have the capability 
+                                        to be locked in place at specific distances from the origin. The design goal was to create a switch 
+                                        that could move ±15 μm in either direction and be precisely controlled as well as locked within this range.
+                                        The system should also be possible to control linearly, by adjusting the applied voltage to the electrodes.
                                         <br>
+                                        <p><a href="docs/Hands_On_Microelectromechanical_Systems_Engineering.pdf">Read the project report here</a></p>
+                                    </p>
                                         <strong>Design</strong><br>
-
-                                        <br><br>
-                                        <strong>Fabrication</strong><br>
-
+                                        The MEMS system design focused on an electrostatic actuation mechanism using a comb drive system. 
+                                        This choice allowed for large displacement (±15 µm) and a stable control region. The spring system 
+                                        consisted of folded springs with anchor points, providing flexibility in adjusting properties. 
+                                        The spring constant k was a crucial parameter, responsible for defining the spring's properties in 
+                                        the desired direction as well as in unwanted directions to prevent lateral instability or transverse motion.
+                                        
+                                        Two basic designs were simulated using COMSOL for FEM-analysis, iteratively refining the designs. 
+                                        Important properties such as lateral and rotational stability, stable range of the actuator, and 
+                                        spring constants were simulated and adjusted accordingly. Final designs were implemented in AutoCAD 
+                                        for chip layout, accommodating about 50 individual devices, including devices from the mandatory designs 
+                                        as well as the alternative device designs.
                                         <div class="row mt-4 justify-content-center">
                                             <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/printing.png" alt="">
+                                                <img class="img-fluid" src="img/projects/ActuatorII_2.png" alt="">
                                             </div>
                                             <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/device.png" alt="">
+                                                <img class="img-fluid" src="img/projects/Lockingmechanism.png" alt="">
                                             </div>	
                                             <div class="col-lg-12 mt-3">
                                                 <p>
-                                                    The images the 3D printing process for the devices and a device being stretched.
+                                                    Images showing the actuator mechanism used to move the device when applying an electric potential,
+                                                     and the designed locking mechanism of the MEMS device being simulated using COMSOL to verify the range
+                                                     of motion and the mechanical stability.
                                                 </p>										
-                                            </div>									
+                                            </div>
                                         </div>
                                         <br>
+                                        
+                                        <strong>Fabrication</strong><br>
+                                        Fabrication began with a Silicon on Insulator (SOI) wafer, involving photoresist coating, mask 
+                                        alignment, and UV patterning. Deep Reactive Ion Etching (DRIE) using the Bosch process created 
+                                        precise structures. This process allowed for high aspect ratio etching, achieving 47μm deep trenches 
+                                        with only 3.31μm diameter.
+                                        
+                                        Subsequent steps included wafer dicing, structure release using HF acid etch, critical point drying 
+                                        to avoid stiction, and aluminum metallization for electrical contacts. The HF etch lasted about three 
+                                        minutes at an etch rate of 1.5nm/min. Critical Point Drying (CPD) was used to avoid surface tension 
+                                        forces and stiction of moving parts during the drying process.
+                                        
+                                        Post-fabrication inspection used Light Optical Microscopy (LOM) and Scanning Electron Microscopy (SEM), 
+                                        revealing successful releases and some stuck structures. SEM imaging allowed for observation of 
+                                        different parts of the device, including the locking mechanism, comb fingers, and spring system. 
+                                        Measurements showed fabricated geometries were within ±1 µm of the design, with a tendency for 
+                                        smaller features in areas with more etched space around them.
+                                                                            
+                                        <div class="row mt-4 justify-content-center">
+                                            <div class="col-md-6 col-lg-4 text-center mb-3">
+                                                <img class="img-fluid" src="img/projects/chip_SEM_m003.jpg" alt="">
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 text-center mb-3">
+                                                <img class="img-fluid" src="img/projects/Dummy_SEM_m002.jpg" alt="">
+                                            </div>	
+                                            <div class="col-lg-12 mt-3">
+                                                <p>
+                                                    Images showing the actuator and locking mechanism of the MEMS device, showing the locking mechanism used to
+                                                    hold the movable part in place, and the deep trenches etched into the silicon to provide the spring system using DRIE
+                                                    (Deep Reactive Ion Etching).
+                                                </p>										
+                                            </div>
+                                        </div>
+                                        <br>
+                                        
                                         <strong>Results</strong><br>
-
+                                        Testing revealed varying yields across different designs. The main design showed 15% fully 
+                                        functional devices when testing only actuation, increasing to 25% when testing both actuation 
+                                        and locking mechanism. Secondary designs performed poorly, likely due to inferior rotational 
+                                        stability. Common issues included stuck movable parts and partially functional locking mechanisms.
+                                        
+                                        Real-world devices required lower voltages than simulated (28.5V vs 65V) to operate the locking 
+                                        mechanism, possibly due to under-etching or unaccounted pull-in effects. This discrepancy might 
+                                        be attributed to the locking mechanism behaving similarly to a parallel plate actuator, where 
+                                        pull-in occurs after moving 1/3 of the initial gap.
+                                        
+                                        Secondary designs (B and D) showed less stability, rotating at voltages above 50V, unlike the main design. 
+                                        This instability was expected based on the simulation results. While some design parameters like 
+                                        rotational and lateral stability couldn't be directly measured during characterization, the observed 
+                                        behavior of the secondary designs aligned with the predicted lower rigidity and stability.
                                         <br><br>
                                         <strong>Contributions to the project:</strong><br>
                                         <ul>
-                                            <li>Developed a novel Direct Ink Writing (DIW) method for fabricating intrinsically stretchable microsupercapacitors</li>
- 
+                                            <li>Designed and simulated two versions of the optical switch using COMSOL Multiphysics</li>
+                                            <li>Optimized the comb drive actuator and spring system for precise control and stability</li>
+                                            <li>Participated in the fabrication process, including photolithography and DRIE</li>
+                                            <li>Conducted post-fabrication analysis using LOM and SEM imaging</li>
+                                            <li>Performed device testing and characterization, analyzing the performance of different designs</li>
+                                            <li>Contributed to the final project report, documenting the design process, fabrication steps, and results</li>
                                         </ul>
                                         <br>
+                                        
                                         <strong>What I learned from this project:</strong><br>
                                         <p>
-                                            This project provided me with invaluable experience in advanced materials research and device fabrication for stretchable electronics. 
-                                            I gained deep insights into the emerging field of printed electronics, particularly focusing on stretchable energy storage devices.
-                                            My understanding of material science expanded significantly, especially in formulating and optimizing conductive inks and electrolytes 
-                                            for specific applications.
+                                            This project provided me with invaluable hands-on experience in MEMS design, fabrication, and characterization. 
+                                            I gained deep insights into the challenges of creating microscale electromechanical systems, particularly 
+                                            focusing on optical switches. My understanding of microfabrication techniques expanded significantly, 
+                                            especially in areas such as photolithography, deep reactive ion etching, and critical point drying.
                                             <br><br>
-                                        </div>
+                                            I learned to use advanced simulation tools like COMSOL Multiphysics to optimize designs before fabrication, 
+                                            which proved crucial in predicting device behavior and improving performance. The project also enhanced my 
+                                            skills in clean room protocols and microscopy techniques, including SEM imaging and analysis.
+                                            <br><br>
+                                            Furthermore, this experience taught me the importance of iterative design and the challenges of translating 
+                                            theoretical designs into practical devices. I gained a deeper appreciation for the complexities involved in 
+                                            MEMS fabrication, including the impact of small variations in the manufacturing process on device performance.
+                                            <br><br>
+                                            Overall, this project significantly improved my problem-solving skills in a research and development context, 
+                                            teaching me to adapt and learn quickly when faced with unexpected results or fabrication challenges.
+                                        </p>
                             </div>
                         </div>
                     </div>
@@ -221,17 +305,17 @@
             <div class="col-lg-9 col-md-12">
                 <div class="company_list">
                     <div class="company_item">
+                        <img src="img/projects/PELSA.jpg" alt="PELSA" width="50" height="50">
+                        <div class="company_info">
+                            <a href="PELSA.html"><h4>PELSA</h4></a>
+                            <p>January 2019 - June 2019</p>
+                        </div>
+                    </div>
+                    <div class="company_item">
                         <img src="img/projects/Masters.jpg" alt="Master's thesis" width="50" height="50">
                         <div class="company_info">
                             <a href="Masters.jpg".html"><h4>Master's thesis</h4></a>
                             <p>January 2020 - June 2020</p>
-                        </div>
-                    </div>
-                    <div class="company_item">
-                        <img src="img/projects/LOM.jpg" alt="MEMS" width="50" height="50">
-                        <div class="company_info">
-                            <a href="mems.html"><h4>Optical MEMS switch</h4></a>
-                            <p>January 2019 - June 2019</p>
                         </div>
                     </div>
                     <div class="company_item">
