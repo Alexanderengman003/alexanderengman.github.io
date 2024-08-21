@@ -674,7 +674,7 @@ button:focus {
 
 
     .did-you-know-box {
-      background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+      background-color: white;
       border-left: 5px solid #6daaff;
       padding: 15px;
       margin: 20px 0;
@@ -1324,22 +1324,52 @@ button:focus {
   height: 100%;
 }
 
-/* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-  .video-container {
-      width: 90%; /* Slightly smaller than full width on mobile */
-      padding-bottom: 50.625%; /* Maintain 16:9 aspect ratio (90% * 56.25%) */
-  }
+
+/* Set equal spacing for all main sections */
+.projects_area,
+.latest_blog_area {
+    padding: 80px 0; /* Adjust this value to match the spacing you prefer */
 }
 
-/* For very small screens */
-@media screen and (max-width: 480px) {
-  .video-container {
-      width: 95%; /* Almost full width on very small screens */
-      padding-bottom: 53.4375%; /* Maintain 16:9 aspect ratio (95% * 56.25%) */
-  }
+/* Remove extra top padding for consecutive sections */
+.projects_area + .projects_area,
+.projects_area + .latest_blog_area,
+.latest_blog_area + .projects_area {
+    padding-top: 0;
 }
 
+/* Ensure consistent spacing for all main titles */
+.main_title {
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
+/* Add some bottom margin to the container of each section for additional separation */
+.projects_area .container,
+.latest_blog_area .container {
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+/* Remove bottom margin from the last section's container */
+body > section:last-of-type .container {
+    margin-bottom: 0;
+}
+
+/* Adjust spacing for mobile devices if needed */
+@media (max-width: 768px) {
+    .projects_area,
+    .latest_blog_area {
+        padding: 60px 0; /* Slightly reduced padding for mobile */
+    }
+
+    .main_title {
+        margin-bottom: 30px; /* Reduced margin for mobile */
+    }
+
+    .projects_area .container,
+    .latest_blog_area .container {
+        margin-bottom: 20px; /* Reduced margin for mobile */
+    }
+}
 
 .image-container-wrapper {
   display: flex;
@@ -3357,7 +3387,7 @@ h6 {
   .banner_btn:hover {
     background-position: right center;
     color: #fff; }
-    
+
     @media (max-width: 991px) {
       .col-lg-3.col-md-12.text-center.text-lg-left {
           padding-top: 20px !important; /* Increase this value as needed */
