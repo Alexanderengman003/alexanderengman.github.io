@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body>
         
@@ -116,8 +120,9 @@
                                             amazing place few have ever seen - a place in danger of vanishing forever.<br><br>
                                             <a href="https://www.youtube.com/watch?v=rNgApvIbh_Y" target="_blank" rel="noopener noreferrer">See the film here</a><br>
                                             <a href="https://www.imdb.com/title/tt5942468/?ref_=tt_mv_close" target="_blank" rel="noopener noreferrer">Read more about the film here</a><br><br>
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/96YSmjIlT8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            <!-- Your existing "Did you know" box HTML -->
+                                            <div class="video-container">
+                                                <iframe src="https://www.youtube.com/embed/96YSmjIlT8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
                                             <div class="did-you-know-box">
                                                 <h4>Fun fact!</h4>
                                                 <p id="fun-fact"></p>
@@ -203,38 +208,56 @@
                                         eggs and sperm into the water, creating a mesmerizing spectacle. However, it only takes place at night. This mean that the filming crew had to be on night dives every night for 2 weeks,
                                         with full filming equipment. Timing the event was crucial and very difficult, which is the reason why it had never been caught on film before. However, we managed to film the spectacular
                                         event, which is featured in the film.
-
-                                        We also filmed a lot of scenes on land, such as the local people and their culture, the local wildlife and much more. 
-                                        <div class="row mt-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/printing.png" alt="">
+                                        <div class="image-gallery">
+                                            <div class="gallery-item active">
+                                                <img src="img/projects/vamizi_1.jpg" alt="Underwater filming in Vamizi" class="gallery-image" data-width="400" data-height="300">
+                                                <p class="gallery-text">Filming crew arriving at Vamizi</p>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/device.png" alt="">
-                                            </div>	
-                                            <div class="col-lg-12 mt-3">
-                                                <p>
-                                                    The images the 3D printing process for the devices and a device being stretched.
-                                                </p>										
-                                            </div>									
+                                            <div class="gallery-item">
+                                                <img src="img/projects/vamizi_2.jpg" alt="Coral reef in Vamizi" class="gallery-image" data-width="400" data-height="300">
+                                                <p class="gallery-text">Part of the film crew</p>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <img src="img/projects/vamizi_4.jpg" alt="Coral reef in Vamizi" class="gallery-image" data-width="400" data-height="300">
+                                                <p class="gallery-text">From left to right: Maryanne Culpepper, Alexander Engman, Ola Högberg, Oscar Svensson</p>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <img src="img/projects/vamizi_6.jpg" alt="Coral reef in Vamizi" class="gallery-image" data-width="400" data-height="300">
+                                                <p class="gallery-text">Home-made underwater light system</p>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <img src="img/projects/vamizi_7.jpg" alt="Coral reef in Vamizi" class="gallery-image" data-width="400" data-height="300">
+                                                <p class="gallery-text">Director of photography Mattias Klum</p>
+                                            </div>
+                                            <button class="gallery-nav prev" onclick="changeImage(-1)">&#10094;</button>
+                                            <button class="gallery-nav next" onclick="changeImage(1)">&#10095;</button>
                                         </div>
-                                        <br>
-                                        <strong>Results</strong><br>
-
+                                        <strong>Critical reception</strong><br>
+                                        The documentary "Vamizi - Cradle of Coral" was successfully completed and released in 2014. It has since been shown at various film festivals and on national television in several countries. The film has received critical acclaim for its stunning underwater imagery and its important message about coral reef conservation. 
+                                        The unique footage of the mass coral spawning event has been particularly praised, as it was the first time this phenomenon had been captured on film in East Africa. Awards that the film has received include:
                                         <br><br>
+                                        <ul>
+                                            <li>New York WILD Film Festival 2017 - Best cinematography</li>
+                                            <li>Waimea Ocean Film Festival 2018 - Best film</li>
+                                        </ul>
+
+                                        <br>
                                         <strong>Contributions to the project:</strong><br>
                                         <ul>
-                                            <li>Developed a novel Direct Ink Writing (DIW) method for fabricating intrinsically stretchable microsupercapacitors</li>
- 
+                                            <li>Served as a safety diver, ensuring the well-being of the underwater photography team</li>
+                                            <li>Assisted with underwater filming equipment setup and operation</li>
+                                            <li>Contributed to the logistics and transportation of filming equipment</li>
+                                            <li>Assisted in documenting various marine life and underwater scenes</li>
+                                            <li>Supported the team in capturing above-water scenes of local culture and wildlife</li>
                                         </ul>
                                         <br>
                                         <strong>What I learned from this project:</strong><br>
                                         <p>
-                                            This project provided me with invaluable experience in advanced materials research and device fabrication for stretchable electronics. 
-                                            I gained deep insights into the emerging field of printed electronics, particularly focusing on stretchable energy storage devices.
-                                            My understanding of material science expanded significantly, especially in formulating and optimizing conductive inks and electrolytes 
-                                            for specific applications.
+                                            This project provided me with an extraordinary experience at the intersection of diving, conservation, and filmmaking. I gained invaluable insights into the complexities of underwater cinematography and the challenges of capturing rare natural events. The project enhanced my diving skills, particularly in night diving and working with complex equipment underwater. I developed a deeper understanding of coral reef ecosystems and the critical importance of their conservation. 
                                             <br><br>
+                                            Moreover, I learned about the logistics and teamwork required in a professional documentary production, especially in remote locations. The experience of working with world-renowned photographers and conservationists broadened my perspective on how science, art, and media can come together to create impactful environmental narratives. This project reinforced my passion for marine conservation and opened my eyes to the power of visual storytelling in raising awareness about critical environmental issues.
+                                        </p>
+                                        </div>
                                         </div>
                             </div>
                         </div>
@@ -244,7 +267,7 @@
         </div>
     </section>
 <!--================End Blog Area =================-->
-<div class="experience_banner">
+<div class="experience_banner" style="background-color: #f5f5f5;">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-3 col-md-12 text-center text-lg-left mb-3 mb-lg-0">
@@ -352,5 +375,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
+        <script src="js/slideshow.js"></script>
     </body>
 </html>

@@ -1189,6 +1189,158 @@ button:focus {
   background-color: #f0f0f0; /* Or any color you want for the unfilled part */
   border-radius: 10px; /* Optional: adds rounded corners */
 }
+
+.image-gallery {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-item {
+  display: none;
+  position: relative;
+  margin: auto;
+}
+
+.gallery-item.active {
+  display: block;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.581);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.gallery-nav.prev {
+  left: 10px;
+}
+
+.gallery-nav.next {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-image {
+      max-height: 300px;
+      width: auto;
+      margin: auto;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.projects_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    transform-origin: bottom center;
+}
+
+.text_wrapper {
+    padding: 0 10px;
+}
+
+.projects_text a {
+    color: #333;
+    text-decoration: none;
+}
+
+.projects_text h4 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.projects_item:hover .projects_text {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(0.9); /* Increase size by 10% */
+    padding: 14px 0; /* Slightly increase padding to maintain proportions */
+}
+
+.projects_item:hover .projects_text h4 {
+    color: #000;
+    font-size: 19.8px; /* Increase font size by 10% */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px; /* Match the original width of your iframe */
+  margin: 0 auto; /* Center the container */
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .video-container {
+      width: 90%; /* Slightly smaller than full width on mobile */
+      padding-bottom: 50.625%; /* Maintain 16:9 aspect ratio (90% * 56.25%) */
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+  .video-container {
+      width: 95%; /* Almost full width on very small screens */
+      padding-bottom: 53.4375%; /* Maintain 16:9 aspect ratio (95% * 56.25%) */
+  }
+}
+
+
 .image-container-wrapper {
   display: flex;
   justify-content: center;
@@ -1196,8 +1348,8 @@ button:focus {
 }
 
 .image-container {
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -3205,6 +3357,12 @@ h6 {
   .banner_btn:hover {
     background-position: right center;
     color: #fff; }
+    
+    @media (max-width: 991px) {
+      .col-lg-3.col-md-12.text-center.text-lg-left {
+          padding-top: 20px !important; /* Increase this value as needed */
+      }
+  }
 
 .white_bg_btn {
   background: #fff;
