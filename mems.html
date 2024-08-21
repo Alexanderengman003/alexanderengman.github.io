@@ -191,21 +191,22 @@
                                         spring constants were simulated and adjusted accordingly. Final designs were implemented in AutoCAD 
                                         for chip layout, accommodating about 50 individual devices, including devices from the mandatory designs 
                                         as well as the alternative device designs.
-                                        <div class="row mt-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/ActuatorII_2.png" alt="">
+                                        <br><br>
+                                        <div class="image-gallery">
+                                            <div class="gallery-item active">
+                                                <img src="img/projects/ActuatorII_2.png" alt="Designed spring actuation system"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">Springs used to move the device when applying a potential</p>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/Lockingmechanism.png" alt="">
-                                            </div>	
-                                            <div class="col-lg-12 mt-3">
-                                                <p>
-                                                    Images showing the actuator mechanism used to move the device when applying an electric potential,
-                                                     and the designed locking mechanism of the MEMS device being simulated using COMSOL to verify the range
-                                                     of motion and the mechanical stability.
-                                                </p>										
+                                            <div class="gallery-item">
+                                                <img src="img/projects/Lockingmechanism.png" alt="Locking mechanism under simulation"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">Locking mechanism of the device simulated using COMSOL</p>
                                             </div>
-                                        </div>
+                                            <button class="gallery-nav prev" onclick="changeImage(-1)">&#10094;</button>
+                                            <button class="gallery-nav next" onclick="changeImage(1)">&#10095;</button>
+                                        </div>                        
+                                        
                                         <br>
                                         
                                         <strong>Fabrication</strong><br>
@@ -224,22 +225,21 @@
                                         different parts of the device, including the locking mechanism, comb fingers, and spring system. 
                                         Measurements showed fabricated geometries were within ±1 µm of the design, with a tendency for 
                                         smaller features in areas with more etched space around them.
-                                                                            
-                                        <div class="row mt-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/chip_SEM_m003.jpg" alt="">
+                                        <div class="image-gallery">
+                                            <div class="gallery-item active">
+                                                <img src="img/projects/chip_SEM_m003.jpg" alt="3D printing of the device"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">Locking mechanism used to hold the springs in place</p>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/Dummy_SEM_m002.jpg" alt="">
-                                            </div>	
-                                            <div class="col-lg-12 mt-3">
-                                                <p>
-                                                    Images showing the actuator and locking mechanism of the MEMS device, showing the locking mechanism used to
-                                                    hold the movable part in place, and the deep trenches etched into the silicon to provide the spring system using DRIE
-                                                    (Deep Reactive Ion Etching).
-                                                </p>										
+                                            <div class="gallery-item">
+                                                <img src="img/projects/Dummy_SEM_m002.jpg" alt="Stretched device"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">Deep trenches etched into the silicon</p>
                                             </div>
-                                        </div>
+                                            <button class="gallery-nav prev" onclick="changeImage(-1)">&#10094;</button>
+                                            <button class="gallery-nav next" onclick="changeImage(1)">&#10095;</button>
+                                        </div>                        
+                                        
                                         <br>
                                         
                                         <strong>Results</strong><br>
@@ -295,7 +295,7 @@
         </div>
     </section>
 <!--================End Blog Area =================-->
-<div class="experience_banner">
+<div class="experience_banner" style="background-color: #f5f5f5;">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-3 col-md-12 text-center text-lg-left mb-3 mb-lg-0">
@@ -403,5 +403,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
+        <script src="js/slideshow.js"></script>
     </body>
 </html>
