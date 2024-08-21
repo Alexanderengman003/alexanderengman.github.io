@@ -199,19 +199,20 @@
                                         
                                         Finally, resist stripping was carried out to remove the remaining photoresist using dry stripping with 
                                         plasma etching equipment at an elevated temperature.
-                                        
-                                        <div class="row mt-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/After_ResistStripp_edge_x100_BF.jpg" alt="MOSFET Fabrication Process">
+                                        <br><br>
+                                        <div class="image-gallery">
+                                            <div class="gallery-item active">
+                                                <img src="img/projects/After_ResistStripp_edge_x100_BF.jpg" alt="Transistors after resist strip"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">The individual transistors after resist strip</p>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 text-center mb-3">
-                                                <img class="img-fluid" src="img/projects/After_ResistStripp_edge_x20_BF.jpg" alt="RIE Chamber">
-                                            </div>	
-                                            <div class="col-lg-12 mt-3">
-                                                <p>
-                                                    Images showing the MOSFET fabrication process and the RIE chamber used for metal etching.
-                                                </p>										
-                                            </div>									
+                                            <div class="gallery-item">
+                                                <img src="img/projects/After_ResistStripp_edge_x20_BF.jpg" alt="MOSFET device after resist strip"
+                                                    class="gallery-image" data-width="400" data-height="400">
+                                                <p class="gallery-text">Network of MOSFETs forming an integrated circuit</p>
+                                            </div>
+                                            <button class="gallery-nav prev" onclick="changeImage(-1)">&#10094;</button>
+                                            <button class="gallery-nav next" onclick="changeImage(1)">&#10095;</button>
                                         </div>
                                         <br>
                                         
@@ -364,5 +365,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
+        <script src="js/slideshow.js"></script>
     </body>
 </html>
