@@ -2382,7 +2382,7 @@ h6 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .photo-item:hover {
@@ -2402,6 +2402,7 @@ h6 {
     font-size: 16px;
     color: #333;
 }
+
 
 .photo-info p {
     margin: 5px 0;
