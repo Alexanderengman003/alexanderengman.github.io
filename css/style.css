@@ -2353,6 +2353,30 @@ h6 {
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
   color: #777777; }
 
+  .banner_area {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_inner {
+    position: relative;
+}
+
+.banner-image {
+    position: absolute;
+    bottom: 0;  /* This removes any space at the bottom */
+    right: 0;   /* This removes any space on the right */
+    max-width: 500px;  /* Increased from 200px to 300px - adjust as needed */
+    height: auto;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .banner-image {
+        max-width: 150px;  /* Increased from 100px to 150px for mobile */
+    }
+}
+
   .photo-item {
     overflow: hidden;
     border-radius: 8px;
