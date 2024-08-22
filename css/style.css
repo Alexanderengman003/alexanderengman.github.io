@@ -1162,21 +1162,35 @@ button:focus {
   margin-bottom: 5px;
 }
 .trait-bar {
-  height: 20px;
-  background-color: #f0f0f0;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 10px;
+    height: 20px;
+    background-color: #f0f0f0; /* Background color for the bar */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded edges for the bar */
 }
 
 .trait-fill {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 0; /* Start with 0 width */
-  transition: width 2.0s ease-out, left 2.0s ease-out, right 2.0s ease-out, background-image 2.0s ease-out;
-  border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 0; /* Start with 0 width */
+    transition: width 2.0s ease-out; /* Smooth transition for width changes */
+    background-color: #3498db; /* Color for the filled portion */
+    /* Remove border-radius to make it flat */
+    border-radius: 0; /* No rounding for the fill */
+}
+
+/* Add a vertical line in the center */
+.trait-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Position it in the center */
+    width: 1px; /* Width of the vertical line */
+    height: 100%; /* Full height of the bar */
+    background-color: #808080; /* Color of the vertical line */
+    transform: translateX(-50%); /* Center the line */
 }
 
 /* Add this new rule */
